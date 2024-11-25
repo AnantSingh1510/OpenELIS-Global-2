@@ -1,0 +1,143 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Body */
+body {
+    background: linear-gradient(135deg, #2980b9, #6dd5fa, #ffffff);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 16px;
+}
+
+/* Container */
+.container {
+    background-color: #ffffff;
+    padding: 2.5rem 3.5rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    transform: scale(1);
+    transition: transform 0.3s ease-out;
+}
+
+.lorem-text {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 20px;
+    color: #555;
+    text-align: center;
+}
+
+.contributors-section {
+    margin: 15px auto;
+    text-align: left; /* Align contributors to the left */
+    max-width: 300px; /* Restrict width for better readability */
+}
+
+.contributors-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contributors-list li {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #333;
+}
+
+
+
+
+/* Title */
+.title {
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Form */
+.upload-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* File Input */
+.file-input {
+    padding: 14px 20px;
+    border: 2px solid #3498db;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.file-input:hover {
+    border-color: #2980b9;
+    background-color: #ecf0f1;
+    transform: scale(1.03);
+}
+
+/* Submit Button */
+.submit-button {
+    padding: 14px 20px;
+    background-color: #2980b9;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease, transform 0.2s ease;
+}
+
+.submit-button:hover {
+    background-color: #1c5983;
+    transform: translateY(-2px);
+}
+
+.submit-button:active {
+    transform: translateY(0);
+}
+
+/* Input focus effect */
+.file-input:focus, .submit-button:focus {
+    outline: none;
+    border-color: #2980b9;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 1.5rem;
+        width: 85%;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .file-input, .submit-button {
+        font-size: 1rem;
+    }
+
+    .lorem-text {
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essentia - Summarize PDFs</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Essentia - Summarize PDFs</h1>
+        <form action="/summarizeMultipart" method="POST" enctype="multipart/form-data">
+            <input type="file" name="files" class="file-input" accept="application/pdf" multiple required>
+            <button type="submit" class="submit-button">Summarize PDFs</button>
+        </form>
+        <a href="/">Upload individual file</a>
+        <p class="lorem-text">
+            Essentia is designed to provide concise summaries for PDF files, making them easier to read and understand. 
+            It was developed as part of our Python Lab project by:
+        </p>
+        <div class="contributors-section">
+            <ul class="contributors-list">
+                <li>Anant Singh - 231030231</li>
+                <li>Anshika Jain - 231030215</li>
+                <li>Ridhima - 231030240</li>
+            </ul>
+        </div>
+        
+    </div>
+</body>
+</html>

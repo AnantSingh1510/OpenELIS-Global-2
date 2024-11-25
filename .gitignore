@@ -1,0 +1,41 @@
+# Byte-compiled files
+__pycache__/
+*.py[cod]
+
+# Environment settings
+.env
+*.env
+
+# Flask-specific
+instance/
+*.sqlite3
+
+# Uploaded files
+uploads/
+generated_pdfs/
+*.pdf
+
+# Logs
+*.log
+
+# Ignore static and dynamic cache files
+*.cache
+*.pyc
+*.pyo
+*.pyd
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Virtual environment
+venv/
+.venv/
+
+# IDE settings
+.vscode/
+.idea/
+*.iml
+
+# ReportLab temporary files (if any)
+*.bak
